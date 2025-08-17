@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 school (template 1)</title>
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/template 1.css" />
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- awesome fonts -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="header">
+        <div class="container">
+            <div class="links">
+                <a href="#">HOME</a>
+                <a href="#Band">BAND</a>
+                <a href="#Tour">TOUR</a>
+                <a href="#Contact">CONTACT</a>
+                <span title="More">
+                    MORE
+                    <i class="fa-solid fa-caret-down" style="color:white;"></i>
+                    <ul>
+                        <li><a href=" #">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </span>
+            </div>
+            <i class=" fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars">
+                <ul>
+                    <li><a href="#Band">BAND</a></li>
+                    <li><a href="#Tour">TOUR</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                    <li><a href="#">MERCH</a></li>
+                </ul>
+            </i>
+
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start landing -->
+    <div class=" landing">
+        <div class="introtext">
+            <div class="text1">
+                <h2>Los Angeles</h2>
+                <p>We had the best time playing at Venice Beach!</p>
+            </div>
+            <div class="text2">
+                <h2>New York</h2>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+            <div class="text3">
+                <h2>Chicago</h2>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+    </div>
+    <!-- start Band -->
+    <div class="band" id="Band">
+        <div class="container">
+            <div class="description">
+                <h2>THE BAND</h2>
+                <h5>We love music</h5>
+                <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <h4>Name</h4>
+                    <img src="images/bandmember.jpg" />
+                </div>
+                <div class="feature">
+                    <h4>Name</h4>
+                    <img src="images/bandmember.jpg" />
+                </div>
+                <div class="feature">
+                    <h4>Name</h4>
+                    <img src="images/bandmember.jpg" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end Band  -->
+
+    <!-- star Tour -->
+    <div class="tour" id="Tour">
+        <div class="container">
+            <div class="detail">
+                <h2>TOUR DATES</h2>
+                <p>Remember to book your tickets!</p>
+            </div>
+            <div class="date">
+                <div class="row">
+                    <span>September</span>
+                    <span>Sold out</span>
+                </div>
+                <div class="row">
+                    <span>October</span>
+                    <span>Sold out</span>
+                </div>
+                <div class="row">
+                    <span>November</span>
+                    <span class="radius">3</span>
+                </div>
+            </div>
+            <div class="tickets">
+                <div class="ticket">
+                    <img src="images/newyork.jpg">
+                    <h4>New York</h4>
+                    <h5>Fri 27 Nov 2016</h5>
+                    <P>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
+                    <button>Buy ticket</button>
+                </div>
+                <div class="ticket">
+                    <img src="images/paris.jpg">
+                    <h4>Paris</h4>
+                    <h5>Sat 28 Nov 2016</h5>
+                    <P>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
+                    <button>Buy ticket</button>
+                </div>
+                <div class="ticket">
+                    <img src="images/sanfran.jpg">
+                    <h4>San Francisco</h4>
+                    <h5>Sun 29 Nov 2016</h5>
+                    <P>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</P>
+                    <button>Buy ticket</button>
+                </div>
+            </div>
+            <div class="menu">
+                <form>
+                    <div class="title">
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                        <br />
+                        <label><i class="fa-solid fa-suitcase"></i> Tickets</label>
+                    </div>
+                    <br />
+                    <div class="body">
+                        <label><i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person</label>
+                        <br />
+                        <input type="text" placeholder="How many?" />
+                        <br />
+                        <label><i class="fa-solid fa-user"></i> Send To</label>
+                        <br />
+                        <input type="text" placeholder="Enter email" />
+                        <br />
+                        <button>PAY <i class="fa-solid fa-check"></i></button>
+                    </div>
+                    <br />
+                    <div class="foot">
+                        <button>Close <i class="fa-solid fa-xmark"></i></button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end Tour -->
+
+    <!-- start contact -->
+    <div class="contact" id="Contact">
+        <div class="container">
+            <div class="detail">
+                <h2>CONTACT</h2>
+                <p>Fan? Drop a note!</p>
+            </div>
+            <div class="description">
+                <div class="informations">
+                    <div class="iformation">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Chicago, US</p>
+                    </div>
+                    <div class="iformation">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone: +00 151515</p>
+                    </div>
+                    <div class="iformation">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email: mail@mail.com</p>
+                    </div>
+                </div>
+                <form action="https://www.w3schools.com/action_page.php?" target="_blank">
+                    <div class="a">
+                        <input type="text" placeholder="Name" name="Name" required />
+                        <input type="email" placeholder="Email" name="Email" required />
+                    </div>
+                    <div class="b">
+                        <input type="text" placeholder="Message" name="Message" required />
+                    </div>
+                    <div class="c">
+                        <input type="submit" value="SEND" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- start contact -->
+    <img src="images/map.jpg">
+    <div class="footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-snapchat"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+
+</body>
+
+</html>
