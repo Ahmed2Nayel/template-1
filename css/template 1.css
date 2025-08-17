@@ -1,0 +1,753 @@
+/* start global rules  */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+@media (max-width:600px) {
+    .contact .container .description form .a input {
+        width: 100%;
+    }
+
+    .header .links>a:not(:first-child) {
+        display: none;
+    }
+
+    .header .container>i:first-of-type {
+        display: none;
+    }
+
+    .header .container>i:last-of-type {
+        display: block !important;
+    }
+
+    .header .links span {
+        display: none !important;
+    }
+
+    .landing .introtext {
+        display: none;
+    }
+}
+
+@media (max-width:900px) {
+    .landing .introtext {
+        height: 20px;
+    }
+}
+
+/* end global rules  */
+
+/* start header */
+
+.header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .links {
+    position: relative;
+}
+
+.header .links>a {
+    width: 100px;
+    display: inline-block;
+    padding: 15px 0px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.header .links>a:hover {
+    background-color: rgb(229 222 222);
+    color: black;
+}
+
+.header .links span {
+    width: 100px;
+    display: inline-block;
+    padding: 15px;
+}
+
+.header .links span:hover {
+    background-color: rgb(229 222 222);
+    color: black;
+    cursor: pointer;
+}
+
+.header .links span ul {
+    display: none;
+    position: absolute;
+    right: -100px;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px #aaa;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.header .links span:hover ul {
+    display: block;
+}
+
+.header .links span ul li a {
+    display: block;
+    padding: 15px;
+    transition: .3s;
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.header .links span ul li a:hover {
+    padding-left: 25px;
+    background-color: #e9e5e5;
+}
+
+.header .container>i {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.header .container>i:first-of-type:hover {
+    background-color: rgb(245 58 58);
+}
+
+.header .container>i:last-of-type {
+    color: white;
+    display: none;
+}
+
+.header .container>i:last-of-type:hover {
+    background-color: rgb(229 222 222);
+    color: black;
+}
+
+.header .container>i:last-of-type:hover ul {
+    display: block;
+}
+
+.header .container i ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 1;
+    font-size: initial;
+    font-family: initial;
+    font-weight: initial;
+    font-style: initial;
+}
+
+.header .container i ul li a {
+    display: block;
+    padding: 15px 0px;
+    padding-left: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.header .container i ul li a:hover {
+    background-color: rgb(229 222 222);
+    color: black;
+}
+
+/* end header */
+
+/* start landing */
+.landing {
+    position: relative;
+    background-image: url(../images/la.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 48.39px;
+    animation-name: image;
+    animation-duration: 12S;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    aspect-ratio: 2;
+    width: 100%;
+}
+
+@keyframes image {
+    0% {
+        background-image: url(../images/la.jpg);
+
+    }
+
+    33.33% {
+        background-image: url(../images/ny.jpg);
+    }
+
+    66.66% {
+        background-image: url(../images/chicago.jpg);
+    }
+
+    100% {
+        background-image: url(../images/la.jpg);
+    }
+
+}
+
+.landing .introtext {
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    width: 350px;
+    transform: translate(-50%, -50%);
+}
+
+.landing .introtext .text1 {
+    position: absolute;
+    animation-name: texta;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+}
+
+.landing .introtext .text2 {
+    position: absolute;
+    animation-name: textb;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    color: transparent;
+    animation-timing-function: step-end;
+}
+
+.landing .introtext .text3 {
+    position: absolute;
+    animation-name: textc;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    color: transparent;
+    animation-timing-function: step-end;
+}
+
+@keyframes texta {
+    0% {
+        color: white;
+    }
+
+    33.33% {
+        color: transparent;
+    }
+
+    66.66% {
+        color: transparent;
+    }
+
+
+    100% {
+        color: white;
+    }
+
+}
+
+@keyframes textb {
+    0% {
+        color: transparent;
+    }
+
+    33.33% {
+        color: white;
+    }
+
+    66.66% {
+        color: transparent;
+    }
+
+
+    100% {
+        color: transparent;
+    }
+
+}
+
+@keyframes textc {
+    0% {
+        color: transparent;
+    }
+
+    33.33% {
+        color: transparent;
+    }
+
+    66.66% {
+        color: white;
+    }
+
+
+    100% {
+        color: transparent;
+    }
+
+}
+
+.landing .introtext h2 {
+    font-weight: 500;
+}
+
+.landing .introtext p {
+    font-size: 15px;
+}
+
+/* end landing */
+
+/* start Band */
+.band {
+    background-color: white;
+}
+
+.band .container {
+    padding: 50px 20px 100px;
+    max-width: 800px;
+    margin: 0px auto;
+
+}
+
+.band .container .description {
+    text-align: center;
+}
+
+.band .container .description h2 {
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+}
+
+.band .container .description h5 {
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.band .container .description p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+
+}
+
+.band .container .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 100px;
+    padding: 0px 30px;
+}
+
+.band .container .features .feature {
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.band .container .features .feature h4 {
+    font-weight: 400;
+}
+
+
+/* end Band */
+
+/* start Tour  */
+.tour {
+    padding: 20px 20px 50px;
+    background-color: black;
+    color: white;
+}
+
+.tour .container {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.tour .container .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tour .container .detail h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.tour .container .detail p {
+    font-style: italic;
+    color: gray;
+    font-weight: 500;
+}
+
+.tour .container .date {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+}
+
+.tour .container .date .row {
+    border-bottom: 1px solid grey;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.tour .container .date .row span {
+    display: inline-block;
+    width: 80px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tour .container .date .row span:first-of-type {
+    color: rgb(128 88 88 / 79%);
+    margin-right: 30px;
+}
+
+.tour .container .date .row span:nth-of-type(1)+span:not(.radius) {
+    text-align: center;
+    color: white;
+    margin-right: 30px;
+    background-color: rgb(255 0 0 / 76%);
+    padding: 5px;
+
+}
+
+.tour .container .date .row:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour .container .date .row .radius {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    padding: 4px;
+    margin: 7px 25px;
+}
+
+.tour .container .tickets {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.tour .container .tickets .ticket {
+    background-color: white;
+    color: black;
+}
+
+.tour .container .tickets .ticket h4 {
+    font-weight: 600;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tour .container .tickets .ticket h5 {
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 15px;
+    color: grey;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.tour .container .tickets .ticket p {
+    font-weight: 500;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+}
+
+.tour .container .tickets .ticket button {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+}
+
+.tour .container .tickets .ticket button:hover {
+    background-color: #80808073;
+    color: black;
+    cursor: pointer;
+
+}
+
+.tour .container .menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.tour .container form {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: white;
+    color: black;
+    z-index: 3;
+}
+
+.tour .container form .title {
+    display: flex;
+    flex-direction: column;
+    background-color: #009688;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.tour .container form .title .icon {
+    align-self: flex-end;
+}
+
+.tour .container form .title .icon i {
+    padding: 15px;
+}
+
+.tour .container form .title .icon i:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.tour .container form .title label {
+    font-size: 30px;
+    align-self: center;
+}
+
+.tour .container form .body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+}
+
+.tour .container form .body input {
+    padding: 10px;
+    border: 1px solid #b5b5b5;
+}
+
+.tour .container form .body button {
+    padding: 15px;
+    background-color: #009688;
+    border: none;
+    color: white;
+}
+
+.tour .container form .body button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.tour .container form .foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tour .container form .foot button {
+
+    padding: 10px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    font-size: 15px;
+}
+
+.tour .container form .foot button:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.tour .container form .foot p a {
+    color: #03A9F4
+}
+
+/* end Tour  */
+
+/* sart contact */
+
+.contact {
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.contact .container .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.contact .container .detail h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.contact .container .detail p {
+    font-style: italic;
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+.contact .container .description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .container .description .informations {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact .container .description .informations .iformation {
+    display: flex;
+    margin: 10px 0;
+}
+
+.contact .container .description .informations .iformation i {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+
+.contact .container .description .informations .iformation p {
+    margin: 0 20px;
+}
+
+.contact .container .description form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact .container .description form .a input {
+    border: 1px solid #b5b5b5;
+    padding: 10px 10px;
+    color: #6d6b6b;
+    margin-bottom: 10px;
+}
+
+.contact .container .description form .b input {
+    border: 1px solid #b5b5b5;
+    padding: 10px 10px;
+    color: #6d6b6b;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact .container .description form .c {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact .container .description form .c input {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+}
+
+.contact .container .description form .c input:hover {
+    background-color: #80808073;
+    color: black;
+    cursor: pointer;
+}
+
+/* end contact */
+
+img {
+    filter: grayscale(50%);
+    width: 100%;
+}
+
+.footer {
+    padding: 50px;
+    margin-top: 25px;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+.footer i {
+    font-size: 25px;
+    color: grey;
+}
+
+.footer i:hover {
+    opacity: .6;
+}
+
+.footer p {
+    color: grey;
+    font-size: 15px;
+}
+
+.footer p a {
+    color: grey;
+    text-align: center;
+}
